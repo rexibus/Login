@@ -21,11 +21,11 @@ body {
   color: #697386;
   width: 410px;
   box-shadow: 0px 0 4px 1px #c4c4c4;
+  background-color: white;
 }
 
-
 #homepage-nav {
-	background-color: white;
+  /**background-color: white;*/
 	border-bottom: 1px solid #C4C4C4;
   display: flex;
   justify-content: center;
@@ -40,7 +40,8 @@ body {
 
 #homepage-content{
 	background-color: white;
-	padding: 15px;
+	padding: 14px;
+  margin-bottom: 3px;
 }
 
 .homepage-input{
