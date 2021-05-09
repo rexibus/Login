@@ -23,7 +23,7 @@ body {
   background-color: white;
 }
 
-#homepage-nav {
+#homepage-card-nav {
   /**background-color: white;*/
 	border-bottom: 1px solid #C4C4C4;
   display: flex;
@@ -31,20 +31,20 @@ body {
   height: 100px;
 }
 
-#homepage-nav img{
+#homepage-card-nav img{
   width: 300px;
 	height: auto;
 }
 
 
-#homepage-content{
+#homepage-card-content{
 	background-color: white;
 	padding: 14px;
   margin-bottom: 3px;
   font-size: 17px;
 }
 
-.homepage-input{
+.homepage-card-input{
 	padding: 14px;
 	position: relative;
 }
@@ -87,7 +87,7 @@ select {
 
 }
 
-.homepage-footer{
+.homepage-card-footer{
 	/**display: flex;
 	justify-content:center;*/
 	text-align: center;
@@ -95,11 +95,11 @@ select {
 	position:relative;
 }
 
-.homepage-input label{
+.homepage-card-input label{
 
 }
 
-.homepage-footer img{
+.homepage-card-footer img{
 	width: 150px;
 	height: auto;
 }
