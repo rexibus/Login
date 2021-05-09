@@ -15,7 +15,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-#homepage {
+#homepage-card {
   border: 1px solid #C4C4C4;
   color: #697386;
   width: 410px;
@@ -41,6 +41,7 @@ body {
 	background-color: white;
 	padding: 14px;
   margin-bottom: 3px;
+  font-size: 17px;
 }
 
 .homepage-input{
