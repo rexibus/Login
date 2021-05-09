@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
-
   <head>
+    <meta charset="utf-8">
+    <title>Medware home</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
   	<link rel="stylesheet" href="css/style.css">
   </head>
-
   <body>
-
     <div class="homepage-banner">
 
     	<div id="homepage-card">
@@ -17,39 +17,43 @@
 
     		<div id="homepage-card-content">
 
-    			<div class="homepage-card-input">
-    				<label> Selezionare l'ente principale *</label>
-    				<select>
-    				<option> Ente 1 </option>
-            <option> Ente 2 </option>
-            <option> Ente 3 </option>
-    				</select>
-    			</div>
+          <form action="">
+            <div class="form-row">
 
-    			<div class="homepage-card-input">
-    				<label> Selezionare il metodo di accesso *</label>
-    				<input>
-    				</input>
-    			</div>
+        			<div class="form-group homepage-card-input">
+        				<label for="which"> Selezionare l'ente principale *</label>
+        				<select class="form-control "id="which" name="origin">
+        				  <option value="ente1"> Ente 1 </option>
+                  <option value="ente2"> Ente 2 </option>
+                  <option value="ente3"> Ente 3 </option>
+        				</select>
+        			</div>
 
-    			<div class="homepage-card-input">
-    				<label> Inserire il nome utente * </label>
-    				<input></input>
-    				<div class="error-text"><span> Credenziali errate! </span></div>
-    			</div>
+        			<div class="form-group homepage-card-input">
+        				<label for="methode"> Selezionare il metodo di accesso *</label>
+        				<input type="text" id="methode" class="form-control" placeholder="methode">
+        			</div>
 
-    			<div class="homepage-card-input">
-    				<label> Inserire la password </label>
-    				<input type="password"></input>
-    				<div class="error-text-flex">
-              <span> Credenziali errate! </span>
-    				  <a href=""> Password dimenticata?</>
+        			<div class="form-group homepage-card-input">
+        				<label for="user-name"> Inserire il nome utente * </label>
+        				<input type="text" id="user-name" class="form-control" placeholder="mario.rossi">
+        				<div class="error-text"><span> Credenziali errate! </span></div>
+        			</div>
+
+        			<div class="form-group homepage-card-input">
+        				<label for="password">Inserire la password</label>
+        				<input  type="password" id="password" class="form-control" placeholder="•••••••">
+        				<div class="error-text-flex">
+                  <span> Credenziali errate! </span>
+        				  <a href=""> Password dimenticata?</>
+                </div>
+        			</div>
+              <!-- <input type="submit" value="ACCEDI" id="login button"> -->
+        			<div id="login"><button> ACCEDI </button></div>
+              <!-- <input type="submit" value="ACCEDI" class="btn btn-primary btn-lg w-100"> -->
+
             </div>
-    			</div>
-
-    			<div id="login">
-    			 <button> ACCEDI </button>
-    			</div>
+          </form>
 
     		</div>
 
@@ -60,6 +64,11 @@
 
     	</div>
     </div>
+
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   </body>
 </html>
 
