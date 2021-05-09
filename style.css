@@ -4,16 +4,21 @@
 }
 
 body {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	overflow: hidden;
 	font-family:LatoRegular;
-	background-image: url("img/BackgroundLogin.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-  /*linear-gradient(rgba(0, 0, 0, 0.4)), linear-gradient(rgba(0, 0, 0, 0.4)),*/
+  margin: 0px;
+}
+
+.homepage-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("img/BackgroundLogin.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 17px;
 }
 
 #homepage-card {
@@ -42,7 +47,6 @@ body {
 	background-color: white;
 	padding: 14px;
   margin-bottom: 3px;
-  font-size: 17px;
 }
 
 .homepage-card-input{
