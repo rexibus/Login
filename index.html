@@ -1,79 +1,83 @@
-<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Medware home</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-  	<link rel="stylesheet" href="css/style.css">
+    <title>Medware</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <div class="homepage-banner">
-      <div class="container">
+
+      <div class="container pt-5">
+
 
         <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-4 homepage-card">
+            <div id="homepage-card-nav"><img src="img/medware.svg"></div>
 
-        	<div id="homepage-card">
+            <form action="#" class="homepage-form">
 
-        		<div id="homepage-card-nav">
-        			<img src="img/medware.svg">
-        		</div>
 
-        		<div id="homepage-card-content">
+              <div class="form-group">
+                <label for="which">Selezionare l'ente principale *</label>
+                <select id="which" class="form-control" name="origin">
+                  <option value="ente1"> Ente 1 </option>
+                  <option value="ente2"> Ente 2 </option>
+                  <option value="ente3"> Ente 3 </option>
+                </select>
+              </div>
 
-              <form action="">
-                <div class="form-row">
+              <div class="form-group">
+                  <label for="methode"> Selezionare il metodo di accesso *</label>
+                  <select class="form-control "id="methode" name="methodeorigin">
+                    <option value="ldap"> LDAP </option>
+                    <option value="ospedaliera"> Ospedaliera </option>
+                    <option value="smartcard"> Smart Card </option>
+                  </select>
+              </div>
 
-            			<div class="form-group homepage-card-input">
-            				<label for="which"> Selezionare l'ente principale *</label>
-            				<select class="form-control "id="which" name="origin">
-            				  <option value="ente1"> Ente 1 </option>
-                      <option value="ente2"> Ente 2 </option>
-                      <option value="ente3"> Ente 3 </option>
-            				</select>
-            			</div>
+              <div class="form-group">
+                <label for="user-name"> Inserire il nome utente * </label>
+                <input type="text" id="user-name" class="form-control" placeholder="mario.rossi">
+                <div class="error-text"><span> Credenziali errate! </span></div>
+              </div>
 
-            			<div class="form-group homepage-card-input">
-            				<label for="methode"> Selezionare il metodo di accesso *</label>
-                    <select class="form-control "id="methode" name="methodeorigin">
-                      <option value="ldap"> LDAP </option>
-                      <option value="ospedaliera"> Ospedaliera </option>
-                      <option value="smartcard"> Smart Card </option>
-                    </select>
-            			</div>
+              <div class="form-group">
+                <label for="last-name">Your last name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Sponge">
+              </div>
 
-            			<div class="form-group homepage-card-input">
-            				<label for="user-name"> Inserire il nome utente * </label>
-            				<input type="text" id="user-name" class="form-control" placeholder="mario.rossi">
-            				<div class="error-text"><span> Credenziali errate! </span></div>
-            			</div>
-
-            			<div class="form-group homepage-card-input">
-            				<label for="password">Inserire la password</label>
-            				<input  type="password" id="password" class="form-control" placeholder="•••••••">
-            				<div class="error-text-flex">
-                      <span> Credenziali errate! </span>
-            				  <a href=""> Password dimenticata?</>
-                    </div>
-            			</div>
-                  <!-- <input type="submit" value="ACCEDI" id="login button"> -->
-            			<div id="login"><button> ACCEDI </button></div>
-                  <!-- <input type="submit" value="ACCEDI" class="btn btn-primary btn-lg w-100"> -->
-
+              <div class="form-group">
+                <label for="password">Inserire la password</label>
+                <input  type="password" id="password" class="form-control" placeholder="•••••••">
+                <div class="d-flex">
+                  <span> Credenziali errate! </span>
+                  <a href=""> Password dimenticata?</>
                 </div>
-              </form>
+              </div>
 
-        		</div>
-
-        		<div class="homepage-card-footer">
-        			<div class="hp-footer-sined-logo"> <img src="img/LogoSined_Q.png"></div>
-        			<div class="version"> <span> v.1.6.0 <span></div>
-        		</div>
-
-        	</div>
+              <input type="submit" value="Sign up" class="btn btn-primary btn-lg w-100">
+            </form>
+            <div class="homepage-card-footer">
+              <div class="hp-footer-sined-logo"> <img src="img/LogoSined_Q.png"></div>
+              <div class="version"> <span> v.1.6.0 <span></div>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
+    <!-- Your responsive signup form -->
+
 
     <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -81,4 +85,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
-
