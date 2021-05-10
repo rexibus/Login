@@ -8,61 +8,71 @@
   </head>
   <body>
     <div class="homepage-banner">
+      <div class="container">
 
-    	<div id="homepage-card">
+        <div class="row justify-content-center">
 
-    		<div id="homepage-card-nav">
-    			<img src="img/medware.svg">
-    		</div>
+        	<div id="homepage-card">
 
-    		<div id="homepage-card-content">
+        		<div id="homepage-card-nav">
+        			<img src="img/medware.svg">
+        		</div>
 
-          <form action="">
-            <div class="form-row">
+        		<div id="homepage-card-content">
 
-        			<div class="form-group homepage-card-input">
-        				<label for="which"> Selezionare l'ente principale *</label>
-        				<select class="form-control "id="which" name="origin">
-        				  <option value="ente1"> Ente 1 </option>
-                  <option value="ente2"> Ente 2 </option>
-                  <option value="ente3"> Ente 3 </option>
-        				</select>
-        			</div>
+              <form action="">
+                <div class="form-row">
 
-        			<div class="form-group homepage-card-input">
-        				<label for="methode"> Selezionare il metodo di accesso *</label>
-        				<input type="text" id="methode" class="form-control" placeholder="methode">
-        			</div>
+            			<div class="form-group homepage-card-input">
+            				<label for="which"> Selezionare l'ente principale *</label>
+            				<select class="form-control "id="which" name="origin">
+            				  <option value="ente1"> Ente 1 </option>
+                      <option value="ente2"> Ente 2 </option>
+                      <option value="ente3"> Ente 3 </option>
+            				</select>
+            			</div>
 
-        			<div class="form-group homepage-card-input">
-        				<label for="user-name"> Inserire il nome utente * </label>
-        				<input type="text" id="user-name" class="form-control" placeholder="mario.rossi">
-        				<div class="error-text"><span> Credenziali errate! </span></div>
-        			</div>
+            			<div class="form-group homepage-card-input">
+            				<label for="methode"> Selezionare il metodo di accesso *</label>
+                    <select class="form-control "id="methode" name="methodeorigin">
+                      <option value="ldap"> LDAP </option>
+                      <option value="ospedaliera"> Ospedaliera </option>
+                      <option value="smartcard"> Smart Card </option>
+                    </select>
+            			</div>
 
-        			<div class="form-group homepage-card-input">
-        				<label for="password">Inserire la password</label>
-        				<input  type="password" id="password" class="form-control" placeholder="•••••••">
-        				<div class="error-text-flex">
-                  <span> Credenziali errate! </span>
-        				  <a href=""> Password dimenticata?</>
+            			<div class="form-group homepage-card-input">
+            				<label for="user-name"> Inserire il nome utente * </label>
+            				<input type="text" id="user-name" class="form-control" placeholder="mario.rossi">
+            				<div class="error-text"><span> Credenziali errate! </span></div>
+            			</div>
+
+            			<div class="form-group homepage-card-input">
+            				<label for="password">Inserire la password</label>
+            				<input  type="password" id="password" class="form-control" placeholder="•••••••">
+            				<div class="error-text-flex">
+                      <span> Credenziali errate! </span>
+            				  <a href=""> Password dimenticata?</>
+                    </div>
+            			</div>
+                  <!-- <input type="submit" value="ACCEDI" id="login button"> -->
+            			<div id="login"><button> ACCEDI </button></div>
+                  <!-- <input type="submit" value="ACCEDI" class="btn btn-primary btn-lg w-100"> -->
+
                 </div>
-        			</div>
-              <!-- <input type="submit" value="ACCEDI" id="login button"> -->
-        			<div id="login"><button> ACCEDI </button></div>
-              <!-- <input type="submit" value="ACCEDI" class="btn btn-primary btn-lg w-100"> -->
+              </form>
 
-            </div>
-          </form>
+        		</div>
 
-    		</div>
+        		<div class="homepage-card-footer">
+        			<div class="hp-footer-sined-logo"> <img src="img/LogoSined_Q.png"></div>
+        			<div class="version"> <span> v.1.6.0 <span></div>
+        		</div>
 
-    		<div class="homepage-card-footer">
-    			<div class="hp-footer-sined-logo"> <img src="img/LogoSined_Q.png"></div>
-    			<div class="version"> <span> v.1.6.0 <span></div>
-    		</div>
+        	</div>
+        </div>
 
-    	</div>
+      </div>
     </div>
 
     <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
