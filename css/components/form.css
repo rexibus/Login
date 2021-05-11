@@ -1,0 +1,19 @@
+.form-group {
+  margin-bottom: 1.4rem;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #28A8EA;
+  transition: background 0.3s ease;
+  border: 1px solid #28A8EA;
+  margin-top: 25px;
+}
+
+.btn-gradient:hover {
+  background: #28A8EA;
+  color: white;
+}
