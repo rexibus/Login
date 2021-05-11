@@ -2,6 +2,12 @@
   margin-bottom: 1.4rem;
 }
 
+.form-homepage-error-text {
+  color: #CD3D64;
+  font-size:13px;
+  line-height:17px;
+}
+
 .btn-gradient {
   color: white;
   padding: 8px 24px;

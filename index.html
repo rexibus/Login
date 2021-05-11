@@ -3,9 +3,7 @@
     <meta charset="utf-8">
     <title>Medware</title>
     <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,63 +15,54 @@
   </head>
   <body>
     <div class="homepage-banner">
-
       <div class="container pt-5">
 
-
+        <!-- Responsive signup form -->
         <div class="row justify-content-center">
           <div class="col-8 col-md-8 col-lg-4 homepage-card">
             <div id="homepage-card-nav"><img src="img/medware.svg"></div>
-
             <form action="#" class="homepage-form">
-
-
               <div class="form-group">
-                <label for="which">Selezionare l'ente principale *</label>
+                <label for="which">Selezionare l'ente principale*</label>
                 <select id="which" class="form-control" name="origin">
                   <option value="ente1"> Ente 1 </option>
                   <option value="ente2"> Ente 2 </option>
                   <option value="ente3"> Ente 3 </option>
                 </select>
               </div>
-
               <div class="form-group">
-                  <label for="methode"> Selezionare il metodo di accesso *</label>
+                  <label for="methode">Selezionare il metodo di accesso*</label>
                   <select class="form-control "id="methode" name="methodeorigin">
                     <option value="ldap"> LDAP </option>
                     <option value="ospedaliera"> Ospedaliera </option>
                     <option value="smartcard"> Smart Card </option>
                   </select>
               </div>
-
               <div class="form-group">
-                <label for="user-name"> Inserire il nome utente * </label>
+                <label for="user-name">Inserire il nome utente*</label>
                 <input type="text" id="user-name" class="form-control" placeholder="mario.rossi">
-                <div class="error-text"><span> Credenziali errate! </span></div>
+                <div class="form-homepage-error-text"><span> Credenziali errate! </span></div>
               </div>
-
               <div class="form-group">
-                <label for="password">Inserire la password</label>
+                <label for="password">Inserire la password*</label>
                 <input  type="password" id="password" class="form-control" placeholder="•••••••">
-                <div class="error-text"><span> Credenziali errate! </span></div>
-               <!--  <div class="d-flex">
-                  <span> Credenziali errate! </span>
-                  <a href=""> Password dimenticata?</>
-                </div> -->
+                <div class="form-homepage-error-text d-flex justify-content-between">
+                  <span>Credenziali errate!</span>
+                  <a href="">Password dimenticata?</a>
+                </div>
               </div>
-
               <input type="submit" value="ACCEDI" class="btn btn-gradient btn-lg w-100">
             </form>
             <div class="homepage-card-footer">
-              <div class="hp-footer-sined-logo"> <img src="img/LogoSined_Q.png"></div>
-              <div class="version"> <span> v.1.6.0 <span></div>
+              <div class="homepage-footer-sined-logo">
+                <a href="https://www.sined.it" target="_blank"><img src="img/LogoSined_Q.png"></a>
+              </div>
+              <div class="homepage-version"> <span> v.1.6.0 <span></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Your responsive signup form -->
-
 
     <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
